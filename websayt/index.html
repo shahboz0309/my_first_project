@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Ijtimoiy Sayt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mini Ijtimoiy Sayt</h1>
+    </header>
+
+```
+<main>
+    <section id="register-login">
+        <h2>Ro‘yxatdan o‘tish / Login</h2>
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Ro‘yxatdan o‘tish</button>
+        </form>
+    </section>
+
+    <section id="posts">
+        <h2>Postlar</h2>
+        <div id="post-list">
+            <!-- Postlar shu yerda ko‘rinadi -->
+        </div>
+        <form id="post-form">
+            <textarea id="post-content" placeholder="Post yozing..." required></textarea>
+            <button type="submit">Yuborish</button>
+        </form>
+    </section>
+</main>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button onclick="registerUser(document.getElementById('username').value, document.getElementById('password').value)">Register</button>
+
+<input type="text" id="user_id" placeholder="User ID">
+<input type="text" id="content" placeholder="Post content">
+<button onclick="addPost(document.getElementById('user_id').value, document.getElementById('content').value)">Add Post</button>
+
+<div id="posts"></div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
